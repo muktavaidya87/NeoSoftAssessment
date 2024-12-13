@@ -29,6 +29,23 @@
 		2FA6D3092D0AD6B70094C5E5 /* NeoSoftAssessmentSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoSoftAssessmentSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2F78A5F62D0C647300D1F455 /* Exceptions for "NeoSoftAssessmentSwiftUIUITests" folder in "NeoSoftAssessmentSwiftUIUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewModelTests.swift,
+			);
+			target = 2FA6D3082D0AD6B70094C5E5 /* NeoSoftAssessmentSwiftUIUITests */;
+		};
+		2F78A5F82D0C647700D1F455 /* Exceptions for "NeoSoftAssessmentSwiftUIUITests" folder in "NeoSoftAssessmentSwiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewModelTests.swift,
+			);
+			target = 2FA6D2FE2D0AD6B70094C5E5 /* NeoSoftAssessmentSwiftUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2FA6D2F12D0AD6B60094C5E5 /* NeoSoftAssessmentSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -42,6 +59,10 @@
 		};
 		2FA6D30C2D0AD6B70094C5E5 /* NeoSoftAssessmentSwiftUIUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2F78A5F82D0C647700D1F455 /* Exceptions for "NeoSoftAssessmentSwiftUIUITests" folder in "NeoSoftAssessmentSwiftUITests" target */,
+				2F78A5F62D0C647300D1F455 /* Exceptions for "NeoSoftAssessmentSwiftUIUITests" folder in "NeoSoftAssessmentSwiftUIUITests" target */,
+			);
 			path = NeoSoftAssessmentSwiftUIUITests;
 			sourceTree = "<group>";
 		};
