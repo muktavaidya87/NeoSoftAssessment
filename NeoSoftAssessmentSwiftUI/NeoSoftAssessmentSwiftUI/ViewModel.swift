@@ -16,4 +16,9 @@ class ViewModel: ObservableObject {
             return dataModel.categories[currentIndex].items.filter { $0.displayName.lowercased().contains(searchText.lowercased()) }
         }
     }
+    
+    var currentDisplayNames: [String] {
+        return  dataModel.categories[self.currentIndex].items.map { $0.displayName }
+    }
 }
+

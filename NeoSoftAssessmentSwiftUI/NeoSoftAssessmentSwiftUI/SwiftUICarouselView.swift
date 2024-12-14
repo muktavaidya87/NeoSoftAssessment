@@ -13,24 +13,26 @@ struct SwiftUICarouselView: View {
     @StateObject private var viewModel = ViewModel()
     
     var body: some View {
-            ScrollView {
-                VStack {
-                    // Carousel
-                    TabView(selection: $viewModel.currentIndex) {
-                        ForEach(0..<dataModel.images.count, id: \.self) { index in
-                            Image(dataModel.images[index])
-                                .resizable()
-                                .scaledToFit()
-                                .tag(index)
-                            
-                        }
+        ZStack{
+        ScrollView {
+            VStack {
+                // Carousel
+                TabView(selection: $viewModel.currentIndex) {
+                    ForEach(0..<dataModel.images.count, id: \.self) { index in
+                        Image(dataModel.images[index])
+                            .resizable()
+                            .scaledToFit()
+                            .tag(index)
+                        
                     }
-                    .tabViewStyle(PageTabViewStyle())
-                    .frame(height: 300)
-                    // List
-                    LazyVStack(alignment: .leading , spacing: 10, pinnedViews: [.sectionHeaders]) {
-                        Section(header: PinnedSearchBar(searchText: $viewModel.searchText)) {
-                            ForEach(viewModel.filteredItems, id: \.self) { item in
+                }
+                .tabViewStyle(PageTabViewStyle())
+                .frame(height: 300)
+
+                // List
+                LazyVStack(alignment: .leading , spacing: 10, pinnedViews: [.sectionHeaders]) {
+                    Section(header: PinnedSearchBar(searchText: $viewModel.searchText)) {
+                        ForEach(viewModel.filteredItems, id: \.self) { item in
                             HStack {
                                 Image(item.image)
                                     .resizable()
@@ -38,9 +40,16 @@ struct SwiftUICarouselView: View {
                                 Text(item.displayName)
                             }.padding()
                         }
-                        }
                     }
                 }
+            }
+        }
+            HStack {
+                Spacer()
+                BottomSheetView(items: viewModel.currentDisplayNames)
+                    .padding(.bottom)
+                    .padding(.trailing, 16)
+            }
             }
     }
 }
