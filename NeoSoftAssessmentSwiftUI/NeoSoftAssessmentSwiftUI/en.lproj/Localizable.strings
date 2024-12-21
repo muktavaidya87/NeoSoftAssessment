@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  NeoSoftAssessmentSwiftUI
+
+  Created by Mukta on 21/12/24.
+  
+*/
+
+"SearchPlaceHolder" = "Search...";
+"StatisticsTitle" = "Statistics";
+"TotalItemsCount" = "Total Items: %@";

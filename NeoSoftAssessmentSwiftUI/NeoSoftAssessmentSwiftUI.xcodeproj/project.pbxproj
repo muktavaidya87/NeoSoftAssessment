@@ -33,14 +33,14 @@
 		2F78A5F62D0C647300D1F455 /* Exceptions for "NeoSoftAssessmentSwiftUIUITests" folder in "NeoSoftAssessmentSwiftUIUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				ViewModelTests.swift,
+				SwiftUICarouselViewModelTests.swift,
 			);
 			target = 2FA6D3082D0AD6B70094C5E5 /* NeoSoftAssessmentSwiftUIUITests */;
 		};
 		2F78A5F82D0C647700D1F455 /* Exceptions for "NeoSoftAssessmentSwiftUIUITests" folder in "NeoSoftAssessmentSwiftUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				ViewModelTests.swift,
+				SwiftUICarouselViewModelTests.swift,
 			);
 			target = 2FA6D2FE2D0AD6B70094C5E5 /* NeoSoftAssessmentSwiftUITests */;
 		};
@@ -433,6 +433,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.NeoSoftAssessmentSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,6 +467,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.NeoSoftAssessmentSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
